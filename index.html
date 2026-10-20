@@ -15,14 +15,14 @@
     body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);line-height:1.5}
     button,input,select{font:inherit} a{color:inherit;text-decoration:none}
     .topbar{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:14px 28px;background:rgba(7,17,31,.84);backdrop-filter:blur(14px);color:white;border-bottom:1px solid rgba(255,255,255,.08)}
-    .brand{font-weight:800;letter-spacing:-.02em}.brand span{color:#78a1ff}.progress{width:180px;height:5px;border-radius:20px;background:rgba(255,255,255,.14);overflow:hidden}.progress>div{height:100%;width:0;background:#78a1ff;transition:width .1s linear}
+    .brand{font-weight:800;letter-spacing:-.02em}.brand span{color:#78a1ff}
     section{min-height:100vh;display:flex;align-items:center;padding:110px 7vw 80px;position:relative;overflow:hidden}.wrap{width:min(1180px,100%);margin:0 auto}
-    .eyebrow{display:inline-flex;gap:8px;align-items:center;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;font-weight:800;color:var(--blue);margin-bottom:18px}
+    .eyebrow{display:inline-flex;gap:8px;align-items:center;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;font-weight:800;color:var(--blue);margin-bottom:12px}
     h1,h2,h3,p{margin-top:0}h1{font-size:clamp(3.2rem,8vw,7.5rem);line-height:.94;letter-spacing:-.065em;max-width:1000px;margin-bottom:28px}h2{font-size:clamp(2.3rem,5vw,4.8rem);line-height:1;letter-spacing:-.045em;max-width:950px;margin-bottom:22px}h3{font-size:1.2rem;letter-spacing:-.02em}.lead{font-size:clamp(1.1rem,2vw,1.45rem);max-width:760px;color:var(--muted)}
-    .hero{background:radial-gradient(circle at 78% 18%,rgba(47,109,246,.28),transparent 30%),radial-gradient(circle at 18% 80%,rgba(16,164,111,.16),transparent 26%),var(--bg);color:#fff}.hero .lead{color:#c7d3e5}.hero .eyebrow{color:#8badff}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+    .hero{background:radial-gradient(circle at 78% 18%,rgba(47,109,246,.28),transparent 30%),radial-gradient(circle at 18% 80%,rgba(47,109,246,.16),transparent 26%),var(--bg);color:#fff}.hero .lead{color:#b9c5d8}.hero .eyebrow{color:var(--blue)}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
     .question-orbit{position:relative;min-height:430px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);border-radius:36px;padding:34px;box-shadow:inset 0 0 90px rgba(255,255,255,.025)}
-    .bubble{position:absolute;padding:14px 18px;border-radius:18px;background:#fff;color:#10203a;font-weight:700;box-shadow:0 18px 40px rgba(0,0,0,.22);max-width:240px;animation:float 5s ease-in-out infinite}.bubble:nth-child(1){top:40px;left:28px}.bubble:nth-child(2){top:155px;right:26px;animation-delay:-1.5s}.bubble:nth-child(3){bottom:40px;left:70px;animation-delay:-3s}
-    .center-dot{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:118px;height:118px;border-radius:50%;background:linear-gradient(145deg,#2f6df6,#7aa2ff);display:grid;place-items:center;text-align:center;font-weight:900;box-shadow:0 0 0 18px rgba(47,109,246,.13),0 0 0 40px rgba(47,109,246,.06)}@keyframes float{50%{transform:translateY(-9px)}}
+    .bubble{position:absolute;padding:14px 18px;border-radius:18px;background:#fff;color:#10203a;font-weight:700;box-shadow:0 18px 40px rgba(0,0,0,.22);max-width:240px;}.bubble:nth-child(1){top:40px;left:28px}.bubble:nth-child(2){top:155px;right:26px;}.bubble:nth-child(3){bottom:40px;left:70px;}
+    .center-dot{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:118px;height:118px;border-radius:50%;background:linear-gradient(145deg,#2f6df6,#7aa2ff);display:grid;place-items:center;text-align:center;font-weight:900;box-shadow:0 0 0 18px rgba(47,109,246,.13),0 0 0 40px rgba(47,109,246,.06)}
     .story-path{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:52px}.story-step{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;transition:.25s ease}.story-step:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:#aac4ff}.story-step b{font-size:1.05rem}.story-step span{font-size:.9rem;color:var(--muted)}
     .transform{background:#fff}.before-after{display:grid;grid-template-columns:1fr 90px 1fr;gap:22px;align-items:center;margin-top:50px}.panel{border:1px solid var(--line);border-radius:30px;padding:34px;background:#fff;box-shadow:var(--shadow)}.panel.before{background:#f7f8fa}.panel.after{border:2px solid var(--blue)}.doc-stack{display:grid;gap:10px;margin-top:24px}.doc{padding:14px 16px;border-radius:14px;background:#fff;border:1px solid var(--line);color:#4b5d75}.arrow{width:64px;height:64px;border-radius:50%;background:#eef4ff;color:var(--blue);display:grid;place-items:center;font-size:2rem;font-weight:800;margin:auto}.chat{display:grid;gap:12px;margin-top:20px}.msg{padding:15px 18px;border-radius:18px;max-width:92%}.msg.user{background:var(--blue);color:#fff;margin-left:auto;border-bottom-right-radius:4px}.msg.ai{background:#eef3fb;color:#182b46;border-bottom-left-radius:4px}
     .cycle{background:#eef4ff}.cycle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:42px}.cycle-card{padding:30px;border-radius:26px;background:#fff;border:1px solid #ccdcfb;box-shadow:0 12px 40px rgba(35,82,163,.08)}.cycle-card .num{font-weight:900;color:var(--blue);font-size:.85rem;letter-spacing:.08em}.cycle-card .quote{font-size:1.45rem;font-weight:800;margin:26px 0 12px}.note{margin-top:24px;padding:18px 20px;border-radius:18px;background:#fff8dd;color:#6f5a00;border:1px solid #f0df8f}
@@ -31,27 +31,27 @@
     .roi{background:#f5f8fd}.calc{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;margin-top:44px}.calc-card,.result-card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:30px;box-shadow:var(--shadow)}.field{display:grid;gap:8px;margin-bottom:18px}.field label{font-weight:750}.field small{color:var(--muted)}.field input,.field select{width:100%;padding:14px 15px;border:1px solid #cfd9e6;border-radius:14px;background:#fff;outline:none;transition:.2s}.field input:focus,.field select:focus{border-color:var(--blue);box-shadow:0 0 0 4px rgba(47,109,246,.1)}.result-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.metric{padding:18px;border-radius:18px;background:#f5f8fc;border:1px solid var(--line)}.metric strong{display:block;font-size:1.7rem;letter-spacing:-.04em}.metric span{color:var(--muted);font-size:.9rem}.metric.highlight{background:var(--green-soft);border-color:#b7ead5}.metric.highlight strong{color:var(--green)}.calc-note{margin-top:18px;font-size:.84rem;color:var(--muted)}.formula{margin-top:18px;padding:16px 18px;border-radius:16px;background:#f8fafc;border:1px dashed #c9d3e0;font-size:.88rem;color:#53647c}
     .pilot{background:#fff}.pilot-card{margin-top:44px;padding:42px;border-radius:34px;background:linear-gradient(145deg,#07111f,#10233d);color:#fff;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}.pilot-card h3{font-size:clamp(2rem,4vw,3.6rem);margin-bottom:10px}.pilot-card p{color:#becadd;max-width:640px}.pill-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.pill{padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1)}.cta{min-width:180px;padding:15px 22px;border-radius:16px;border:0;background:#fff;color:#0d1a2b;font-weight:850;cursor:pointer}.cta:hover{transform:translateY(-2px)}
     .reveal{opacity:0;transform:translateY(28px);transition:.7s ease}.reveal.show{opacity:1;transform:none}.footer{padding:30px 7vw 50px;background:#07111f;color:#8090a8;font-size:.85rem;text-align:center}
-    @media (max-width:900px){.hero-grid,.calc,.channel-map{grid-template-columns:1fr}.story-path,.cycle-grid{grid-template-columns:1fr}.before-after{grid-template-columns:1fr}.questions{grid-template-columns:1fr}.mini-arrow{transform:rotate(90deg)}.channel-list{grid-template-columns:1fr 1fr}.engine{margin:10px auto}.pilot-card{grid-template-columns:1fr}.topbar{padding:12px 16px}.progress{width:100px}section{padding:95px 20px 60px}}
+    @media (max-width:900px){.hero-grid,.calc,.channel-map{grid-template-columns:1fr}.story-path,.cycle-grid{grid-template-columns:1fr}.before-after{grid-template-columns:1fr}.questions{grid-template-columns:1fr}.mini-arrow{transform:rotate(90deg)}.channel-list{grid-template-columns:1fr 1fr}.engine{margin:10px auto}.pilot-card{grid-template-columns:1fr}.topbar{padding:12px 16px}section{padding:95px 20px 60px}}
 
     /* Preguntas flotantes con posiciones asimétricas y espacio para el núcleo. */
     .question-orbit{display:block;min-height:460px;padding:28px}
-    .question-orbit .bubble{position:absolute;max-width:220px;font-size:15px;animation:float 5s ease-in-out infinite;text-align:left}
-    .question-orbit .bubble:nth-child(1){top:28px;left:34px;right:auto;bottom:auto;animation-duration:5.8s;animation-delay:-.8s}
-    .question-orbit .bubble:nth-child(2){top:122px;right:14px;left:auto;bottom:auto;max-width:160px;animation-duration:6.4s;animation-delay:-2.4s}
-    .question-orbit .bubble:nth-child(3){bottom:42px;left:24px;top:auto;right:auto;max-width:200px;animation-duration:5.2s;animation-delay:-3.6s}
+    .question-orbit .bubble{position:absolute;max-width:220px;font-size:15px;text-align:left}
+    .question-orbit .bubble:nth-child(1){top:28px;left:34px;right:auto;bottom:auto;}
+    .question-orbit .bubble:nth-child(2){top:122px;right:14px;left:auto;bottom:auto;max-width:160px;}
+    .question-orbit .bubble:nth-child(3){bottom:42px;left:24px;top:auto;right:auto;max-width:200px;}
     .question-orbit .center-dot{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);box-shadow:0 0 0 14px rgba(47,109,246,.13),0 0 0 28px rgba(47,109,246,.06)}
     /* Presentación: una diapositiva visible por vez. */
     html,body{height:100%;overflow:hidden}
     html{scroll-behavior:auto}
     .topbar{height:62px;background:#07111f;padding:12px 28px}
-    .progress{width:160px}
+
     body>section{display:none;position:fixed;inset:62px 0 76px;min-height:0;padding:24px 40px;overflow:hidden;align-items:center;justify-content:center}
     body>section.is-active{display:flex}
     body>section>.wrap{width:1180px;max-width:none;flex-shrink:0;margin:0;transform:scale(var(--slide-scale,1));transform-origin:center}
     h1{font-size:88px}h2{font-size:55px}.lead{font-size:21px}
     .hero-grid{grid-template-columns:1.15fr .85fr;gap:50px}
     .reveal,.reveal.show{opacity:1;transform:none;transition:none}
-    .is-active>.wrap{animation:slide-enter .3s ease}
+    .is-active>.wrap{animation:slide-enter .24s ease-out}
     @keyframes slide-enter{from{opacity:0}to{opacity:1}}
     .calc{margin-top:24px;align-items:start}
     .calc-card,.result-card{padding:24px}
@@ -72,11 +72,11 @@
     .slide-count{font-size:14px;font-variant-numeric:tabular-nums;min-width:48px;text-align:center}
     .slide-dots{display:flex;gap:8px}
     .slide-dot{width:24px;height:24px;padding:0;border:0;background:transparent;cursor:pointer;display:grid;place-items:center;border-radius:50%}
-    .slide-dot::after{content:'';width:7px;height:7px;border-radius:50%;background:#526079}
-    .slide-dot[aria-current=true]::after{background:#8badff;box-shadow:0 0 0 4px #8badff26}
+    .slide-dot::after{content:'';width:7px;height:7px;border:1px solid #c4d2e5;border-radius:50%;background:#a8b9d4;transition:background .15s ease,box-shadow .15s ease}
+    .slide-dot[aria-current=true]::after{background:#8badff;border-color:#c6d7ff;box-shadow:0 0 0 3px #8badff40}
     .footer{display:none}
     @media(max-width:700px){
-      .topbar{padding:12px 16px}.brand{font-size:14px}.progress{width:70px}
+      .topbar{padding:12px 16px}.brand{font-size:14px}
       body>section{padding:28px 20px;overflow-y:auto;overscroll-behavior:contain;align-items:flex-start}
       body>section>.wrap{width:100%;flex-shrink:1;transform:none;margin:auto 0}
       h1{font-size:clamp(44px,11vw,68px)}h2{font-size:clamp(32px,8vw,48px)}.lead{font-size:17px}
@@ -97,42 +97,327 @@
       body>section,body>section.is-active{display:flex;position:relative;inset:auto;min-height:100vh;break-after:page;padding:35px;overflow:visible}
       body>section>.wrap{width:100%;transform:none}
     }
+
+    /* Problema: fuentes distribuidas, sin un recorrido único. */
+    #problema .eyebrow{color:var(--blue);margin-bottom:12px}
+    #problema h2{font-size:48px;max-width:1000px;margin-bottom:14px}
+    #problema .lead{max-width:1060px;font-size:19px;margin-bottom:0}
+    #problema .source-map{position:relative;height:358px;margin:22px 0 18px;border:1px solid var(--line);border-radius:var(--radius);background:radial-gradient(ellipse at 50% 48%,#eef4ff 0,transparent 58%),#f1f5f8;isolation:isolate}
+    #problema .map-caption{position:absolute;top:14px;left:20px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+    #problema .map-links{position:absolute;inset:0;width:100%;height:100%;z-index:-1;overflow:visible}
+    #problema .map-links path{fill:none;stroke:#a7bbdc;stroke-width:1.3;vector-effect:non-scaling-stroke;marker-end:url(#problem-arrow)}
+    #problema .map-links .from-user{stroke:var(--blue);stroke-opacity:.6;stroke-dasharray:5 6;marker-end:url(#problem-arrow-blue)}
+    #problema .source-list{list-style:none;padding:0;margin:0}
+    #problema .source{position:absolute;left:var(--x);top:var(--y);width:192px;min-height:52px;padding:10px 13px;display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:0 4px 14px #0b162805;font-size:14px;font-weight:650;line-height:1.3}
+    #problema .source-icon{width:29px;height:29px;flex:none;display:grid;place-items:center;border-radius:9px;background:#f1f5f8;color:#607089;font-size:11px;font-weight:800}
+    #problema .map-user{position:absolute;left:calc(50% - 133px);top:123px;width:266px;min-height:110px;padding:17px 20px;text-align:center;border:1.5px solid var(--blue);border-radius:24px;background:#fff;box-shadow:0 0 0 8px #2f6df609,0 10px 28px #0b16280a}
+    #problema .map-user b{display:flex;justify-content:center;align-items:center;gap:7px;color:var(--blue);font-size:12px;letter-spacing:.12em}
+    #problema .map-user svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.6}
+    #problema .map-user p{font-size:21px;line-height:1.25;font-weight:750;letter-spacing:-.03em;margin:10px 0 0}
+    #problema .problem-insights{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    #problema .problem-insight{padding:16px 18px;border:1px solid var(--line);border-radius:18px;background:#fff}
+    #problema .problem-insight h3{font-size:16px;margin:0 0 6px;display:flex;align-items:center;gap:8px}
+    #problema .problem-insight h3::before{content:'';width:6px;height:6px;flex:none;border-radius:50%;background:var(--blue)}
+    #problema .problem-insight p{font-size:14px;color:var(--muted);margin:0}
+    #problema .problem-close{margin-top:22px;padding-top:20px;border-top:1px solid var(--line)}
+    #problema .problem-statement{font-size:25px;line-height:1.25;font-weight:750;letter-spacing:-.025em;margin:0 auto;max-width:1000px;text-align:center}
+    #problema .problem-statement strong{color:var(--blue);font-weight:inherit}
+
+
+
+    @media(max-width:700px){
+      #problema h2{font-size:clamp(32px,8vw,48px)}
+      #problema .lead{font-size:17px}
+      #problema .source-map{height:auto;padding:22px 14px 16px;margin-top:24px}
+      #problema .map-caption{position:static;display:block;text-align:center;font-size:10px;margin-bottom:18px}
+      #problema .map-user{position:relative;left:auto;top:auto;width:min(266px,100%);margin:0 auto 24px}
+      #problema .map-links{display:none}
+      #problema .source-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+      #problema .source{position:static;width:auto;min-width:0;padding:10px;gap:7px;font-size:12px;border-radius:13px}
+      #problema .source-icon{width:24px;height:24px;font-size:10px;border-radius:7px}
+      #problema .problem-insights{grid-template-columns:1fr;gap:10px}
+      #problema .problem-close{margin-top:24px;padding-top:24px}
+      #problema .problem-statement{font-size:24px}
+
+    }
+    @media print{
+      #problema .map-user,#problema .source,#problema .map-links,#problema .problem-insight{animation:none!important}
+    }
+
+    /* Funcionamiento: una consulta, fuentes oficiales y una respuesta con origen. */
+    #funcionamiento .eyebrow{color:var(--blue)}
+    #funcionamiento h2{max-width:1100px}
+    #funcionamiento .lead{max-width:1060px;font-size:19px;margin-bottom:0}
+    #funcionamiento .rag-example{font-size:12px;color:var(--muted);margin:24px 0 12px}
+    #funcionamiento .rag-flow{display:grid;grid-template-columns:1fr 1fr 1.2fr 1.1fr 1.25fr;gap:24px;list-style:none;padding:0;margin:0}
+    #funcionamiento .rag-step{position:relative;min-width:0;padding:20px 16px;border-radius:22px;box-shadow:none}
+    #funcionamiento .rag-step:not(:last-child)::after{content:'→';position:absolute;left:calc(100% + 5px);top:50%;transform:translateY(-50%);font-size:21px;color:var(--muted)}
+    #funcionamiento .rag-number{display:grid;place-items:center;width:30px;height:30px;border:1px solid var(--line);border-radius:10px;font-size:12px;font-weight:800;color:var(--muted);margin-bottom:18px}
+    #funcionamiento .rag-step h3{font-size:18px;line-height:1.25;margin-bottom:18px}
+    #funcionamiento .chat{margin:0}
+    #funcionamiento .msg{font-size:15px;max-width:100%;padding:13px 12px}
+    #funcionamiento .rag-context{font-size:15px;margin:0}
+    #funcionamiento .rag-context strong{display:block;margin-bottom:8px}
+    #funcionamiento .rag-context span{color:var(--muted)}
+    #funcionamiento .rag-core{background:var(--green-soft);border:2px solid var(--green)}
+    #funcionamiento .rag-core .rag-number{background:var(--green);border-color:var(--green);color:#fff}
+    #funcionamiento .rag-docs{display:grid;gap:6px;list-style:none;padding:0;margin:0}
+    #funcionamiento .doc{font-size:13px;padding:8px 10px;border-radius:10px}
+    #funcionamiento .rag-technical{font-size:11px;color:var(--muted);line-height:1.5;margin:14px 0 0}
+    #funcionamiento .rag-excerpt{padding:14px 12px;border-radius:12px;background:#fff8dd;border:1px solid #f0df8f;font-size:15px;line-height:1.5;margin:0}
+    #funcionamiento .rag-excerpt strong{display:block;margin-bottom:8px}
+    #funcionamiento .rag-citation{font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;margin:16px 0 0;line-height:1.5}
+    #funcionamiento .rag-citation b{display:block;color:var(--ink);margin-bottom:4px}
+    #funcionamiento .rag-fallback{display:grid;grid-template-columns:300px 1fr;gap:24px;align-items:start;margin-top:22px;padding:18px 20px;border:1px solid var(--line);border-radius:18px;background:#fff;text-align:center}
+    #funcionamiento .rag-fallback h3{font-size:16px;margin:0}
+    #funcionamiento .rag-fallback p{font-size:14px;color:var(--muted);margin:0}
+    #funcionamiento .big-line{font-size:26px;line-height:1.3;margin-top:22px;padding:22px 26px;background:#fff;color:var(--ink);border:1px solid var(--line);text-align:center}
+    #funcionamiento .big-line strong{color:#087a53;font-weight:inherit}
+    @media(max-width:700px){
+      #funcionamiento .lead{font-size:17px}
+      #funcionamiento .rag-flow{grid-template-columns:1fr;gap:30px}
+      #funcionamiento .rag-step{padding:22px}
+      #funcionamiento .rag-step:not(:last-child)::after{content:'↓';left:50%;top:calc(100% + 3px);transform:translateX(-50%)}
+      #funcionamiento .rag-number{margin-bottom:12px}
+      #funcionamiento .rag-step h3{font-size:20px;margin-bottom:16px}
+      #funcionamiento .rag-fallback{grid-template-columns:1fr;gap:10px;padding:20px}
+      #funcionamiento .big-line{font-size:24px;padding:22px}
+    }
+    @media print{
+      #funcionamiento .rag-step,#funcionamiento .big-line{animation:none!important}
+    }
+
+    /* El giro: consultas que revelan patrones y orientan decisiones. */
+    #insights .eyebrow{color:var(--blue)}
+    #insights .lead{max-width:1060px;margin-bottom:0}
+    #insights .insight-journey{display:flex;align-items:center;gap:18px;list-style:none;padding:0;margin:28px 0;color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+    #insights .insight-journey li{display:flex;align-items:center;gap:18px}
+    #insights .insight-journey li+li::before{content:'→';font-size:20px;font-weight:500;letter-spacing:0;color:var(--blue)}
+    #insights .insight-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    #insights .i{padding:26px 28px;border-radius:22px;border-color:#b7ead5;border-left-color:var(--green)}
+    #insights .i h3{margin:0 0 10px;color:#087a53;font-size:21px;line-height:1.25}
+    #insights .i p{margin:0;color:var(--muted);font-size:16px;max-width:470px}
+    @media(max-width:700px){
+      #insights .insight-journey{gap:10px;font-size:10px;letter-spacing:.04em;margin:24px 0}
+      #insights .insight-journey li{gap:10px}
+      #insights .insight-journey li+li::before{font-size:16px}
+      #insights .insight-list{grid-template-columns:1fr;gap:14px}
+      #insights .i{padding:24px}
+      #insights .i h3{font-size:20px}
+      #insights .i p{font-size:15px}
+    }
+    @media print{
+      #insights .eyebrow,#insights h2,#insights .lead,#insights .insight-journey,#insights .i,#insights .big-line{animation:none!important}
+    }
+
+    /* Coherencia editorial: mismos criterios, sin alterar el desafío aprobado. */
+    body>section:not(#problema) h2{margin-bottom:14px}
+    body>section:not(#problema) .lead{max-width:1060px;font-size:19px;margin-bottom:0}
+    body>section:not(#problema) .big-line{margin:22px auto 0;padding:22px 26px;font-size:26px;line-height:1.3;font-weight:750;text-align:center}
+    @media(max-width:700px){
+      body>section:not(#problema) .lead{font-size:17px}
+      body>section:not(#problema) .big-line{padding:22px;font-size:24px}
+    }
+
+    /* Controles de presentación: indicadores visibles y pantalla completa nativa. */
+    .slide-dot:hover::after{background:#fff}
+    .slide-dot:focus-visible{outline:2px solid #8badff;outline-offset:2px}
+    .fullscreen-button{width:42px;height:42px;padding:10px;flex-shrink:0}
+    .fullscreen-button[hidden],.fullscreen-status[hidden]{display:none}
+    .fullscreen-button svg{width:20px;height:20px;display:block;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+    .fullscreen-button .fullscreen-exit{display:none}
+    :fullscreen .fullscreen-button .fullscreen-enter{display:none}
+    :fullscreen .fullscreen-button .fullscreen-exit{display:block}
+    .fullscreen-status{position:absolute;bottom:calc(100% + 8px);right:20px;max-width:min(360px,90vw);padding:12px 16px;border:1px solid #ffffff30;border-radius:12px;background:var(--bg);font-size:13px;color:#fff}
+    .topbar{gap:20px}
+    .presentation-actions{display:flex;align-items:center;gap:10px}
+    .slide-select{width:240px;max-width:32vw;padding:10px 32px 10px 12px;border:1px solid #ffffff30;border-radius:12px;background:#0d1a2b;color:#fff;font-size:13px;cursor:pointer;text-overflow:ellipsis;color-scheme:dark}
+    .slide-select:focus-visible{outline:3px solid #8badff;outline-offset:3px}
+    .fullscreen-status{top:calc(100% + 8px);bottom:auto}
+    .slide-controls{min-height:76px;display:flex;align-items:center;justify-content:space-between;padding:12px 28px}
+    .slide-caption{display:none}
+    .slide-navigation{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;width:max-content;gap:12px}
+    #prevSlide,#nextSlide{width:36px;height:36px;padding:0;font-size:22px;display:grid;place-items:center}
+    .slide-dots{position:absolute;left:50%;top:4px;transform:translateX(-50%);display:flex;width:auto;gap:8px;justify-content:center}
+    .slide-count{position:absolute;width:1px;height:1px;min-width:0;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+    @media(max-width:700px){
+      .topbar{height:104px;display:grid;grid-template-columns:1fr auto;gap:6px 12px;padding:8px 16px}
+      .presentation-actions{grid-column:1/-1;justify-content:flex-end;gap:8px}
+      .slide-select{width:auto;max-width:none;min-width:0;flex:1;padding:8px 28px 8px 10px}
+      .fullscreen-button{width:34px;height:34px;padding:6px}
+      body>section{top:104px;bottom:76px}
+      .slide-controls{min-height:76px;padding:12px 8px;gap:0}
+      .slide-dots{gap:4px}
+      .slide-dot{width:24px;height:24px}
+      #prevSlide,#nextSlide{width:36px;height:36px}
+    }
+    @media print{.is-active>.wrap{animation:none}body>section .eyebrow{transform:none!important}}
   </style>
 </head>
 <body>
-<header class="topbar"><div class="brand">Centro de Manuales <span>IA</span></div><div class="progress" role="progressbar" aria-label="Progreso de la presentación" aria-valuemin="1" aria-valuemax="8" aria-valuenow="1"><div id="progressBar"></div></div></header>
-<section class="hero is-active" id="inicio"><div class="wrap hero-grid"><div class="reveal"><div class="eyebrow">IA conversacional B2B para producto</div><h1>Del manual a la conversación.</h1><p class="lead">Transformamos documentación de producto en una experiencia conversacional que ayuda a tus clientes y genera conocimiento para tu marca.</p></div><div class="question-orbit reveal"><div class="bubble">¿Por qué parpadea esta luz?</div><div class="bubble">¿Cuál modelo me conviene?</div><div class="bubble">¿Cómo limpio el filtro?</div><div class="center-dot">UNA<br/>PREGUNTA</div></div></div></section>
-<section id="problema"><div class="wrap"><div class="eyebrow reveal">01 · El desafío</div><h2 class="reveal">Una pregunta simple no debería convertirse en una búsqueda.</h2><p class="lead reveal">La respuesta muchas veces ya existe. El problema es todo lo que el usuario tiene que atravesar para encontrarla.</p><div class="story-path reveal"><div class="story-step"><b>Usuario</b><span>Tiene una duda concreta.</span></div><div class="story-step"><b>Manual / PDF</b><span>La información está escrita, pero no siempre es fácil de encontrar.</span></div><div class="story-step"><b>Búsqueda externa</b><span>Google, videos y resultados con distinta calidad.</span></div><div class="story-step"><b>WhatsApp / Redes</b><span>La consulta cambia de canal, pero el problema sigue.</span></div><div class="story-step"><b>Soporte humano</b><span>La marca termina absorbiendo consultas repetitivas.</span></div></div></div></section>
-<section class="transform" id="transformacion"><div class="wrap"><div class="eyebrow reveal">02 · La transformación</div><h2 class="reveal">¿Y si en lugar de buscar, pudiera preguntar?</h2><div class="before-after reveal"><div class="panel before"><h3>Antes</h3><p class="lead" style="font-size:1rem">Documentación estática y dispersa.</p><div class="doc-stack"><div class="doc">Manual del producto.pdf</div><div class="doc">Ficha técnica.xlsx</div><div class="doc">Preguntas frecuentes</div><div class="doc">Catálogo comercial</div></div></div><div class="arrow">→</div><div class="panel after"><h3>Ahora</h3><div class="chat"><div class="msg user">¿Por qué parpadea la luz roja?</div><div class="msg ai">Según el manual oficial del modelo X200, la luz indica que el filtro requiere limpieza.</div></div><p style="margin:18px 0 0;color:var(--muted)">Lenguaje cotidiano · Respuesta basada en fuente oficial · Sin recorrer documentos</p></div></div></div></section>
-<section class="cycle" id="ciclo"><div class="wrap"><div class="eyebrow reveal">03 · Ciclo del cliente</div><h2 class="reveal">Una conversación que puede acompañar distintos momentos del producto.</h2><div class="cycle-grid reveal"><div class="cycle-card"><div class="num">01 · PREVENTA *</div><div class="quote">“¿Cuál modelo me conviene?”</div><p>Comparación, compatibilidad, dimensiones, características y criterios de elección.</p></div><div class="cycle-card"><div class="num">02 · POSTVENTA</div><div class="quote">“¿Cómo configuro esta función?”</div><p>Instalación, primer uso, ajustes, mantenimiento y preguntas frecuentes.</p></div><div class="cycle-card"><div class="num">03 · SOPORTE</div><div class="quote">“¿Qué significa este error?”</div><p>Troubleshooting y orientación a partir de documentación técnica autorizada.</p></div></div><div class="note reveal"><b>* Preventa:</b> territorio de oportunidad detectado en benchmark y a validar mediante research con usuarios y clientes.</div></div></section>
-<section class="insights" id="insights"><div class="wrap"><div class="eyebrow reveal">04 · El giro</div><h2 class="reveal">Pero cada pregunta también le cuenta algo a la marca.</h2><p class="lead reveal">Lo que antes quedaba perdido en llamadas, chats o búsquedas puede convertirse en información estructurada.</p><div class="questions reveal"><div class="question-list"><div class="q">“¿Por qué la comida no queda crujiente?”</div><div class="q">“¿Cómo se limpia?”</div><div class="q">“¿Qué significa esta luz?”</div><div class="q">“¿Dónde consigo este repuesto?”</div></div><div class="mini-arrow">→</div><div class="insight-list"><div class="i">Dudas frecuentes por modelo</div><div class="i">Temas difíciles de comprender</div><div class="i">Errores recurrentes de uso</div><div class="i">Oportunidades de producto y documentación</div></div></div><div class="big-line reveal">No solo ayudamos a encontrar respuestas. Ayudamos a entender las preguntas.</div></div></section>
-<section class="channels" id="canales"><div class="wrap"><div class="eyebrow reveal">05 · Qué estamos vendiendo</div><h2 class="reveal">El canal puede cambiar. El conocimiento permanece.</h2><p class="lead reveal">WhatsApp o la web pueden ser la interfaz. El activo es una capa de conocimiento de producto respaldada por fuentes autorizadas.</p><div class="channel-map reveal"><div class="channel-list"><div class="channel">QR en producto</div><div class="channel">Web</div><div class="channel">WhatsApp</div><div class="channel">Otros canales</div></div><div class="engine">IA<br/>RAG</div><div class="knowledge"><b>Conocimiento oficial del producto</b><p>Manuales · fichas técnicas · FAQs · catálogos · documentación autorizada.</p></div></div></div></section>
-<section class="roi" id="roi"><div class="wrap"><div class="eyebrow reveal">06 · Calculadora comercial</div><h2 class="reveal">¿Qué impacto podría tener en tu operación?</h2><p class="lead reveal">Usá tus propios números. El cálculo no presupone ahorros de soporte: los podés sumar solo si tenés una estimación interna.</p><div class="calc reveal"><div class="calc-card"><h3>Ingresá tus datos</h3><div class="field"><label for="units">Unidades producidas / distribuidas por año</label><input id="units" type="number" min="0" step="1000" value="100000"></div><div class="field"><label for="printCost">Costo actual del manual impreso por unidad (USD)</label><input id="printCost" type="number" min="0" step="0.01" value="0.75"><small>Podés incluir impresión, inserción y materiales si forman parte del costo.</small></div><div class="field"><label for="pricingModel">Modelo de costo de la solución</label><select id="pricingModel"><option value="monthly">Suscripción mensual</option><option value="perunit">Costo por unidad</option></select></div><div id="monthlyFields"><div class="field"><label for="monthlyFee">Fee mensual de plataforma (USD)</label><input id="monthlyFee" type="number" min="0" step="50" value="800"></div></div><div id="perUnitFields" style="display:none"><div class="field"><label for="perUnitFee">Costo de solución por unidad (USD)</label><input id="perUnitFee" type="number" min="0" step="0.01" value="0.06"></div></div><div class="field"><label for="setup">Implementación / setup inicial (USD)</label><input id="setup" type="number" min="0" step="100" value="0"></div><div class="field"><label for="supportSavings">Ahorro anual estimado en soporte (USD, opcional)</label><input id="supportSavings" type="number" min="0" step="100" value="0"><small>Dejalo en 0 si todavía no existe evidencia propia para estimarlo.</small></div></div><div class="result-card"><h3>Escenario estimado</h3><div class="result-grid"><div class="metric"><strong id="currentCost">$0</strong><span>Costo anual actual de manuales</span></div><div class="metric"><strong id="solutionCost">$0</strong><span>Costo estimado de solución · año 1</span></div><div class="metric highlight"><strong id="netSavings">$0</strong><span>Ahorro neto estimado · año 1</span></div><div class="metric highlight"><strong id="roiValue">0%</strong><span>ROI estimado · año 1</span></div><div class="metric"><strong id="roiMultiple">0x</strong><span>Retorno sobre la inversión</span></div><div class="metric"><strong id="breakEven">—</strong><span>Recupero aproximado</span></div></div><div class="formula"><b>Cómo se calcula:</b><br>Costo actual = unidades × costo de manual impreso.<br>Beneficio anual = ahorro de impresión + ahorro de soporte informado por el cliente.<br>ROI = (beneficio anual − costo de solución) ÷ costo de solución × 100.</div><div class="calc-note">Calculadora orientativa para conversación comercial. No reemplaza un business case validado con costos, alcance técnico y métricas reales del cliente.</div></div></div></div></section>
-<section class="pilot" id="piloto"><div class="wrap"><div class="eyebrow reveal">07 · Próximo paso</div><h2 class="reveal">El conocimiento ya existe. Hagámoslo conversar.</h2><div class="pilot-card reveal"><div><h3>Empecemos con un producto.</h3><p>Un piloto permite observar qué preguntan realmente los usuarios, qué puede responder la documentación existente y qué conocimiento nuevo vuelve a la marca.</p><div class="pill-row"><div class="pill">1 producto</div><div class="pill">Documentación oficial</div><div class="pill">Experiencia conversacional</div><div class="pill">Medición de consultas</div></div></div><button class="cta" data-slide-target="roi">Calcular escenario</button></div></div></section>
+<header class="topbar"><div class="brand">Centro de Manuales <span>IA</span></div><div class="presentation-actions"><select id="slideSelect" class="slide-select" aria-label="Ir a una diapositiva"></select><button type="button" class="slide-button fullscreen-button" id="fullscreenToggle" aria-label="Pantalla completa" aria-pressed="false" title="Pantalla completa (F)" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path class="fullscreen-enter" d="M8 3H3v5M16 3h5v5M3 16v5h5M21 16v5h-5"/><path class="fullscreen-exit" d="M3 8h5V3M21 8h-5V3M8 21v-5H3M16 21v-5h5"/></svg>
+    </button><span id="fullscreenStatus" class="fullscreen-status" role="status" hidden></span></div></header>
+<section class="hero is-active" id="inicio"><div class="wrap hero-grid"><div class="reveal"><div class="eyebrow">01 · IA conversacional para productos</div><h1>Del manual a la conversación.</h1><p class="lead">Transformamos documentación de producto en una experiencia conversacional que ayuda a tus clientes y genera conocimiento para tu marca.</p></div><div class="question-orbit reveal"><div class="bubble">¿Por qué parpadea esta luz?</div><div class="bubble">¿Cuál modelo me conviene?</div><div class="bubble">¿Cómo limpio el filtro?</div><div class="center-dot">UNA<br/>PREGUNTA</div></div></div></section>
+<section id="problema"><div class="wrap">
+  <div class="eyebrow reveal">02 · El desafío</div>
+  <h2 class="reveal">Una duda puede convertirse en una búsqueda caótica.</h2>
+  <p class="lead reveal">La información existe, pero está distribuida entre múltiples fuentes. El usuario prueba, compara y cambia de canal hasta encontrar una respuesta en la que confía.</p>
+  <div class="source-map" role="group" aria-label="Mapa conceptual de múltiples fuentes de información, con conexiones posibles entre ellas; no representa un recorrido validado de usuarios.">
+    <span class="map-caption">Múltiples fuentes · posibles conexiones</span>
+    <svg class="map-links" viewBox="0 0 1180 358" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <defs>
+        <marker id="problem-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" style="fill:#a7bbdc;stroke:none;marker-end:none"/></marker>
+        <marker id="problem-arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" style="fill:#2f6df6;stroke:none;marker-end:none"/></marker>
+      </defs>
+      <g class="from-user-links">
+        <path class="from-user" d="M490 123 Q443 90 340 80"/>
+        <path class="from-user" d="M590 123 Q575 102 578 81"/>
+        <path class="from-user" d="M457 173 Q355 185 249 149"/>
+        <path class="from-user" d="M723 165 Q825 132 925 151"/>
+        <path class="from-user" d="M490 233 Q411 258 309 253"/>
+        <path class="from-user" d="M640 233 Q651 260 674 288"/>
+        <path class="from-user" d="M723 205 Q788 217 885 246"/>
+      </g>
+      <g>
+        <path d="M674 55 Q750 20 815 70"/>
+        <path d="M849 99 C784 121 375 101 249 141"/>
+        <path d="M152 121 Q155 81 196 68"/>
+        <path d="M292 81 Q365 111 482 58"/>
+        <path d="M340 65 C435 8 853 3 960 125"/>
+        <path d="M1000 177 Q1075 236 515 306"/>
+        <path d="M598 80 C745 107 758 245 608 288"/>
+        <path d="M160 177 C185 308 1046 326 999 272"/>
+        <path d="M983 220 Q1028 159 937 99"/>
+        <path d="M309 253 Q337 274 372 288"/>
+        <path d="M770 314 Q793 343 830 318"/>
+      </g>
+    </svg>
+    <div class="map-user">
+      <b><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 22v-3a8 8 0 0 1 16 0v3"/></svg>USUARIO</b>
+      <p>“¿Por qué hace este ruido?”</p>
+    </div>
+    <ul class="source-list" aria-label="Fuentes posibles de consulta">
+      <li class="source" style="--x:13%;--y:29px;--i:0"><span class="source-icon" aria-hidden="true">PDF</span>Manual / PDF</li>
+      <li class="source" style="--x:41%;--y:29px;--i:1"><span class="source-icon" aria-hidden="true">G</span>Google</li>
+      <li class="source" style="--x:69%;--y:47px;--i:2"><span class="source-icon" aria-hidden="true">▶</span>YouTube</li>
+      <li class="source" style="--x:5%;--y:122px;--i:3"><span class="source-icon" aria-hidden="true">IA</span>ChatGPT / IA</li>
+      <li class="source" style="--x:78.5%;--y:125px;--i:4"><span class="source-icon" aria-hidden="true">···</span>Amigos / conocidos</li>
+      <li class="source" style="--x:10%;--y:226px;--i:5"><span class="source-icon" aria-hidden="true">↗</span>WhatsApp</li>
+      <li class="source" style="--x:75%;--y:220px;--i:6"><span class="source-icon" aria-hidden="true">www</span>Sitio oficial de la marca</li>
+      <li class="source" style="--x:27.5%;--y:288px;--i:7"><span class="source-icon" aria-hidden="true">?</span>Soporte</li>
+      <li class="source" style="--x:49%;--y:288px;--i:8"><span class="source-icon" aria-hidden="true">⚙</span>Técnico / service</li>
+      <li class="source" style="--x:70.5%;--y:296px;--i:9"><span class="source-icon" aria-hidden="true">#</span>Foros / redes sociales</li>
+    </ul>
+  </div>
+  <div class="problem-insights">
+    <article class="problem-insight" style="--i:0"><h3>Información fragmentada</h3><p>La respuesta puede estar distribuida entre distintos lugares.</p></article>
+    <article class="problem-insight" style="--i:1"><h3>Esfuerzo para validar</h3><p>Encontrar una respuesta no alcanza: hay que decidir cuál creer.</p></article>
+    <article class="problem-insight" style="--i:2"><h3>Cambio constante de canal</h3><p>Cuando una fuente no alcanza, el usuario prueba otra.</p></article>
+  </div>
+  <div class="problem-close">
+    <p class="problem-statement">El problema no es solo encontrar información. <strong>Es saber dónde buscar y en qué respuesta confiar.</strong></p>
+  </div>
+</div></section>
+<section id="funcionamiento"><div class="wrap">
+  <div class="eyebrow reveal">03 · La solución</div>
+  <h2 class="reveal">Cómo funciona detrás de la conversación</h2>
+  <p class="lead reveal">El sistema no responde desde conocimiento genérico: primero busca la información relevante dentro de las fuentes oficiales del producto y recién después construye la respuesta.</p>
+  <p class="rag-example">Ejemplo ilustrativo · Modelo X200</p>
+  <ol class="rag-flow" aria-label="De la pregunta a una respuesta basada en documentación oficial">
+    <li class="panel rag-step" style="--i:0">
+      <span class="rag-number" aria-hidden="true">01</span>
+      <h3>Usuario pregunta</h3>
+      <div class="chat"><div class="msg user">“¿Por qué parpadea la luz roja?”</div></div>
+    </li>
+    <li class="panel rag-step" style="--i:1">
+      <span class="rag-number" aria-hidden="true">02</span>
+      <h3>Identificamos el producto</h3>
+      <p class="rag-context"><strong>Modelo X200</strong><span>Categoría: mantenimiento</span></p>
+    </li>
+    <li class="panel rag-step rag-core" style="--i:2">
+      <span class="rag-number" aria-hidden="true">03</span>
+      <h3>RAG busca en la documentación oficial</h3>
+      <ul class="rag-docs" aria-label="Fuentes oficiales">
+        <li class="doc">Manual PDF</li>
+        <li class="doc">Ficha técnica</li>
+        <li class="doc">FAQs</li>
+        <li class="doc">Documentación autorizada</li>
+      </ul>
+      <p class="rag-technical">chunks + embeddings + búsqueda semántica</p>
+    </li>
+    <li class="panel rag-step" style="--i:3">
+      <span class="rag-number" aria-hidden="true">04</span>
+      <h3>Recupera la información útil</h3>
+      <blockquote class="rag-excerpt"><strong>Luz roja intermitente:</strong>indica necesidad de limpieza del filtro.</blockquote>
+    </li>
+    <li class="panel rag-step" style="--i:4">
+      <span class="rag-number" aria-hidden="true">05</span>
+      <h3>Genera una respuesta clara</h3>
+      <div class="chat"><div class="msg ai">“La luz roja indica que el filtro necesita limpieza. Te explico cómo hacerlo.”</div></div>
+      <p class="rag-citation"><b>Fuente:</b>Manual oficial X200 · Mantenimiento · pág. 24</p>
+    </li>
+  </ol>
+  <aside class="rag-fallback" aria-labelledby="rag-fallback-title">
+    <h3 id="rag-fallback-title">¿Y si no encuentra suficiente información?</h3>
+    <p>Si la documentación no contiene evidencia suficiente, el sistema puede informar que no encontró una respuesta confiable y derivar la consulta a soporte u otro canal definido por la marca.</p>
+  </aside>
+  <div class="big-line reveal">El usuario no busca en el manual. <strong>El sistema busca en el manual por el usuario.</strong></div>
+</div></section>
+<section class="cycle" id="ciclo"><div class="wrap"><div class="eyebrow reveal">04 · Ciclo del cliente</div><h2 class="reveal">Una conversación que puede acompañar distintos momentos del producto.</h2><div class="cycle-grid reveal"><div class="cycle-card"><div class="num">01 · PREVENTA *</div><div class="quote">“¿Cuál modelo me conviene?”</div><p>Comparación, compatibilidad, dimensiones, características y criterios de elección.</p></div><div class="cycle-card"><div class="num">02 · POSTVENTA</div><div class="quote">“¿Cómo configuro esta función?”</div><p>Instalación, primer uso, ajustes, mantenimiento y preguntas frecuentes.</p></div><div class="cycle-card"><div class="num">03 · SOPORTE</div><div class="quote">“¿Qué significa este error?”</div><p>Troubleshooting y orientación a partir de documentación técnica autorizada.</p></div></div></div></section>
+<section class="insights" id="insights"><div class="wrap">
+  <div class="eyebrow reveal">05 · El giro</div>
+  <h2 class="reveal">De las consultas individuales a los insights de producto.</h2>
+  <p class="lead reveal">Cuando analizamos las consultas en conjunto, empiezan a aparecer patrones sobre cómo se usa, se entiende y se necesita el producto.</p>
+  <ol class="insight-journey" aria-label="De las consultas a las decisiones">
+    <li>Consultas reales</li>
+    <li>Patrones</li>
+    <li>Decisiones</li>
+  </ol>
+  <div class="insight-list">
+    <article class="i" style="--i:0"><h3>Dudas frecuentes por modelo</h3><p>Qué preguntas se repiten en cada producto o versión.</p></article>
+    <article class="i" style="--i:1"><h3>Temas difíciles de comprender</h3><p>Qué funciones o instrucciones generan más confusión.</p></article>
+    <article class="i" style="--i:2"><h3>Errores recurrentes de uso</h3><p>Qué problemas aparecen una y otra vez en la experiencia real.</p></article>
+    <article class="i" style="--i:3"><h3>Oportunidades de producto y documentación</h3><p>Qué aprendizajes pueden ayudar a mejorar producto, manuales y soporte.</p></article>
+  </div>
+  <div class="big-line reveal">No solo ayudamos a encontrar respuestas, ayudamos a entender las preguntas.</div>
+</div></section>
+<section class="channels" id="canales"><div class="wrap"><div class="eyebrow reveal">06 · ¿QUÉ ES MANUALES RAG?</div><h2 class="reveal">Información oficial, en lenguaje natural y con respaldo de la marca.</h2><p class="lead reveal">Manuales RAG transforma documentación técnica en respuestas conversacionales basadas en fuentes oficiales.</p><div class="channel-map reveal"><div class="channel-list"><div class="channel">Más valor para el manual</div><div class="channel">Más autoridad para la marca</div><div class="channel">Menos fricción para el usuario</div><div class="channel">Más conocimiento para el negocio</div></div><div class="engine">IA<br/>RAG</div><div class="knowledge"><b>Información oficial y trazable</b><p>Cada consulta genera valor para el usuario y aprendizaje para la marca.</p></div></div></div></section>
+<section class="roi" id="roi"><div class="wrap"><div class="eyebrow reveal">07 · Calculadora comercial</div><h2 class="reveal">¿Qué impacto podría tener en tu operación?</h2><p class="lead reveal">Usá tus propios números. El cálculo no presupone ahorros de soporte: los podés sumar solo si tenés una estimación interna.</p><div class="calc reveal"><div class="calc-card"><h3>Ingresá tus datos</h3><div class="field"><label for="units">Unidades producidas / distribuidas por año</label><input id="units" type="number" min="0" step="1000" value="100000"></div><div class="field"><label for="printCost">Costo actual del manual impreso por unidad (USD)</label><input id="printCost" type="number" min="0" step="0.01" value="0.75"><small>Podés incluir impresión, inserción y materiales si forman parte del costo.</small></div><div class="field"><label for="pricingModel">Modelo de costo de la solución</label><select id="pricingModel"><option value="monthly">Suscripción mensual</option><option value="perunit">Costo por unidad</option></select></div><div id="monthlyFields"><div class="field"><label for="monthlyFee">Fee mensual de plataforma (USD)</label><input id="monthlyFee" type="number" min="0" step="50" value="800"></div></div><div id="perUnitFields" style="display:none"><div class="field"><label for="perUnitFee">Costo de solución por unidad (USD)</label><input id="perUnitFee" type="number" min="0" step="0.01" value="0.06"></div></div><div class="field"><label for="setup">Implementación / setup inicial (USD)</label><input id="setup" type="number" min="0" step="100" value="0"></div><div class="field"><label for="supportSavings">Ahorro anual estimado en soporte (USD, opcional)</label><input id="supportSavings" type="number" min="0" step="100" value="0"><small>Dejalo en 0 si todavía no existe evidencia propia para estimarlo.</small></div></div><div class="result-card"><h3>Escenario estimado</h3><div class="result-grid"><div class="metric"><strong id="currentCost">$0</strong><span>Costo anual actual de manuales</span></div><div class="metric"><strong id="solutionCost">$0</strong><span>Costo estimado de solución · año 1</span></div><div class="metric highlight"><strong id="netSavings">$0</strong><span>Ahorro neto estimado · año 1</span></div><div class="metric highlight"><strong id="roiValue">0%</strong><span>ROI estimado · año 1</span></div><div class="metric"><strong id="roiMultiple">0x</strong><span>Retorno sobre la inversión</span></div><div class="metric"><strong id="breakEven">—</strong><span>Recupero aproximado</span></div></div><div class="formula"><b>Cómo se calcula:</b><br>Costo actual = unidades × costo de manual impreso.<br>Beneficio anual = ahorro de impresión + ahorro de soporte informado por el cliente.<br>ROI = (beneficio anual − costo de solución) ÷ costo de solución × 100.</div><div class="calc-note">Calculadora orientativa para conversación comercial. No reemplaza un business case validado con costos, alcance técnico y métricas reales del cliente.</div></div></div></div></section>
+<section class="pilot" id="piloto"><div class="wrap"><div class="eyebrow reveal">08 · Próximo paso</div><h2 class="reveal">El conocimiento ya existe. Hagámoslo conversar.</h2><div class="pilot-card reveal"><div><h3>Empecemos con un producto.</h3><p>Un piloto permite observar qué preguntan realmente los usuarios, qué puede responder la documentación existente y qué conocimiento nuevo vuelve a la marca.</p><div class="pill-row"><div class="pill">1 producto</div><div class="pill">Documentación oficial</div><div class="pill">Experiencia conversacional</div><div class="pill">Medición de consultas</div></div></div><button class="cta" data-slide-target="roi">Calcular escenario</button></div></div></section>
 <nav class="slide-controls" aria-label="Navegación de diapositivas">
   <span class="slide-caption" id="slideTitle"></span>
   <div class="slide-dots" id="slideDots" aria-label="Ir a una diapositiva"></div>
   <div class="slide-navigation">
-    <button type="button" class="slide-button" id="prevSlide" aria-label="Diapositiva anterior">← Anterior</button>
+    <button type="button" class="slide-button" id="prevSlide" aria-label="Diapositiva anterior" title="Anterior (←)">←</button>
     <span class="slide-count" id="slideCount" role="status" aria-live="polite" aria-atomic="true"></span>
-    <button type="button" class="slide-button" id="nextSlide" aria-label="Diapositiva siguiente">Siguiente →</button>
+    <button type="button" class="slide-button" id="nextSlide" aria-label="Diapositiva siguiente" title="Siguiente (→)">→</button>
   </div>
 </nav>
 <footer class="footer">Concepto comercial interactivo · Centro de Manuales IA · Los resultados de la calculadora dependen de los datos ingresados por el cliente.</footer>
 <script>
 const slides=[...document.querySelectorAll('body > section')];
-const progressBar=document.getElementById('progressBar');
 const previousButton=document.getElementById('prevSlide');
 const nextButton=document.getElementById('nextSlide');
 let currentSlide=0;
 const slideNames=slides.map(slide=>slide.querySelector('.eyebrow').textContent.trim());
+const slideSelect=document.getElementById('slideSelect');
+slides.forEach((slide,index)=>{
+  const option=document.createElement('option');
+  option.value=String(index);
+  option.textContent=slideNames[index];
+  slideSelect.append(option);
+});
+slideSelect.addEventListener('change',()=>showSlide(Number(slideSelect.value)));
+
 const dots=slides.map((slide,index)=>{
   slide.setAttribute('role','region');
   slide.setAttribute('aria-roledescription','diapositiva');
   slide.setAttribute('aria-label',`${index+1} de ${slides.length}: ${slideNames[index]}`);
   const button=document.createElement('button');
   button.type='button';button.className='slide-dot';
-  button.setAttribute('aria-label',`Ir a ${index+1}: ${slideNames[index]}`);
+  button.setAttribute('aria-label',`Ir a ${slideNames[index]}`);
+  button.title=slideNames[index];
   button.addEventListener('click',()=>showSlide(index));
   document.getElementById('slideDots').append(button);
   return button;
@@ -140,8 +425,17 @@ const dots=slides.map((slide,index)=>{
 function fitSlide(){
   const slide=slides[currentSlide];
   const wrap=slide.querySelector('.wrap');
+  const eyebrow=slide.querySelector('.eyebrow');
+  eyebrow.style.transform='none';
   const scale=window.innerWidth<=700?1:Math.min(1,(slide.clientWidth-80)/1180,(slide.clientHeight-48)/wrap.offsetHeight);
   wrap.style.setProperty('--slide-scale',scale);
+  // Reposition only the eyebrow; keep its original space in the content flow.
+  const rect=eyebrow.getBoundingClientRect();
+  const sectionRect=slide.getBoundingClientRect();
+  const targetTop=sectionRect.top+parseFloat(getComputedStyle(slide).paddingTop)+4;
+  const targetLeft=window.innerWidth<=700?20:Math.max(40,(slide.clientWidth-1180)/2);
+  eyebrow.style.transformOrigin='top left';
+  eyebrow.style.transform=`translate(${(targetLeft-rect.left)/scale}px,${(targetTop-rect.top)/scale}px) scale(${1/scale})`;
 }
 function showSlide(index,updateHash=true){
   currentSlide=Math.max(0,Math.min(slides.length-1,index));
@@ -158,8 +452,7 @@ function showSlide(index,updateHash=true){
   nextButton.disabled=currentSlide===slides.length-1;
   document.getElementById('slideCount').textContent=`${currentSlide+1} / ${slides.length}`;
   document.getElementById('slideTitle').textContent=slideNames[currentSlide];
-  progressBar.style.width=`${((currentSlide+1)/slides.length)*100}%`;
-  progressBar.parentElement.setAttribute('aria-valuenow',currentSlide+1);
+  slideSelect.value=String(currentSlide);
   if(updateHash && location.hash!==`#${slides[currentSlide].id}`)history.replaceState(null,'',`#${slides[currentSlide].id}`);
   slides[currentSlide].scrollTop=0;
   fitSlide();
@@ -170,8 +463,41 @@ function showSlide(index,updateHash=true){
 }
 previousButton.addEventListener('click',()=>showSlide(currentSlide-1));
 nextButton.addEventListener('click',()=>showSlide(currentSlide+1));
+
+const fullscreenButton=document.getElementById('fullscreenToggle');
+const fullscreenStatus=document.getElementById('fullscreenStatus');
+fullscreenButton.hidden=!document.fullscreenEnabled;
+async function toggleFullscreen(){
+  if(!document.fullscreenEnabled)return;
+  fullscreenStatus.hidden=true;
+  try{
+    if(document.fullscreenElement)await document.exitFullscreen();
+    else await document.documentElement.requestFullscreen({navigationUI:'hide'});
+  }catch{
+    fullscreenStatus.textContent='No se pudo activar la pantalla completa. Podés usar la opción de pantalla completa del navegador.';
+    fullscreenStatus.hidden=false;
+  }
+}
+fullscreenButton.addEventListener('click',toggleFullscreen);
+document.addEventListener('fullscreenchange',()=>{
+  const active=Boolean(document.fullscreenElement);
+  const label=active?'Salir de pantalla completa':'Pantalla completa';
+  fullscreenButton.setAttribute('aria-pressed',String(active));
+  fullscreenButton.setAttribute('aria-label',label);
+  fullscreenButton.title=`${label} (F)`;
+  requestAnimationFrame(fitSlide);
+});
 document.addEventListener('keydown',event=>{
-  if(event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey || event.target.closest('input,select,textarea,button,a,[contenteditable]'))return;
+  if(event.defaultPrevented||event.altKey||event.ctrlKey||event.metaKey||event.shiftKey||event.repeat||event.target.closest('input,select,textarea,[contenteditable]'))return;
+  if(event.key.toLowerCase()==='f'){
+    event.preventDefault();
+    toggleFullscreen();
+  }
+});
+
+document.addEventListener('keydown',event=>{
+  if(event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey || event.target.closest('input,select,textarea,[contenteditable]'))return;
+  if(event.target.closest('button,a') && !['ArrowLeft','ArrowRight','PageUp','PageDown','Home','End'].includes(event.key))return;
   const actions={ArrowRight:currentSlide+1,PageDown:currentSlide+1,ArrowLeft:currentSlide-1,PageUp:currentSlide-1,Home:0,End:slides.length-1,' ':currentSlide+1};
   if(Object.hasOwn(actions,event.key)){event.preventDefault();showSlide(actions[event.key]);}
 });
